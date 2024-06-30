@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,15 +38,14 @@ body {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background: url("../../images/bg-top.svg") right top no-repeat,
-    url("../../images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
+  background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
   background-size: contain;
 }
 
 @media screen and (min-width: 1070px) {
   body {
-    background: url("../../images/bg-top.svg") right top no-repeat,
-      url("../../images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
+    background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat,
+      #f6f6fe;
   }
 }
 
