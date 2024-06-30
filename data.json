@@ -1,0 +1,26 @@
+[
+  {
+    "plan": "Basic",
+    "price_monthly": 19.99,
+    "price_annually": 199.99,
+    "storage": "500 GB",
+    "num_users": 2,
+    "upload_size": 3
+  },
+  {
+    "plan": "Professional",
+    "price_monthly": 24.99,
+    "price_annually": 249.99,
+    "storage": "1 TB",
+    "num_users": 5,
+    "upload_size": 10
+  },
+  {
+    "plan": "Master",
+    "price_monthly": 39.99,
+    "price_annually": 399.99,
+    "storage": "2 TB",
+    "num_users": 10,
+    "upload_size": 20
+  }
+]

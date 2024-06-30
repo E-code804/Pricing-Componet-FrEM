@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  /* transition: all ease 0.2s; */
+  list-style-type: none;
+}
+
+/* Colors */
+:root {
+  /* Primary */
+  --primary-gradient-start: hsl(236, 72%, 79%);
+  --primary-gradient-end: hsl(237, 63%, 64%);
+
+  /* Neutral */
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+/* Primary */
+.primary-gradient {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+/* Typography */
+
+/* Body Copy */
+body {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background: url("../../images/bg-top.svg") right top no-repeat,
+    url("../../images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
+  background-size: contain;
+}
+
+@media screen and (min-width: 1070px) {
+  body {
+    background: url("../../images/bg-top.svg") right top no-repeat,
+      url("../../images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
+  }
+}
+
+/* Styles w/ Colors */
+.primary-gradient {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+}
+
+.very-light-grayish-blue {
+  color: var(--very-light-grayish-blue);
+}
+
+.light-grayish-blue {
+  color: var(--light-grayish-blue);
+}
+
+.grayish-blue {
+  color: var(--grayish-blue);
+}
+
+.dark-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+
+/* Toggle Styles */
+.toggle-container {
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 0.5rem;
+}
+
+.toggle-container:hover {
+  background: linear-gradient(to right, hsl(236, 68%, 84%), hsl(237, 64%, 72%));
+}
+
+.toggle-button {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.25px;
+  left: 4px;
+  transition: transform 0.3s;
+  background: #fff;
+}
+
+.toggle-container.toggled .toggle-button {
+  transform: translateX(29.75px);
+}
+
+/* Card Styles */
+.price-card {
+  min-width: 330px;
+  max-width: 500px;
+}
+.price-card-prof {
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+}
+
+.price-card-norm {
+  background: #fff;
+  color: var(--dark-grayish-blue);
+}
+
+.price-card-btn {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+}
+
+.prof-btn {
+  background: #fff;
+  color: var(--primary-gradient-end);
+  border: 1px solid #fff;
+}
+
+.prof-btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.norm-btn {
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.norm-btn:hover {
+  background: transparent;
+  color: var(--primary-gradient-end);
+  border: 1px solid var(--primary-gradient-end);
+}
