@@ -38,14 +38,18 @@ body {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
+  /* background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat, #f6f6fe; */
+  background: url("/Pricing-Componet-FrEM/images/bg-top.svg") right top no-repeat,
+    url("/Pricing-Componet-FrEM/images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
   background-size: contain;
 }
 
 @media screen and (min-width: 1070px) {
   body {
-    background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat,
-      #f6f6fe;
+    /* background: url("/images/bg-top.svg") right top no-repeat, url("/images/bg-bottom.svg") left bottom no-repeat,
+      #f6f6fe; */
+    background: url("/Pricing-Componet-FrEM/images/bg-top.svg") right top no-repeat,
+      url("/Pricing-Componet-FrEM/images/bg-bottom.svg") left bottom no-repeat, #f6f6fe;
   }
 }
 
